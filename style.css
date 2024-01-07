@@ -19,6 +19,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     height: 500px;
     width: 1280px;
+	gap: 50px;
+    display: flex;
+    flex-direction: column;
+	padding: 20px;
 }
 
 .top-container {
@@ -27,7 +31,6 @@ body {
     justify-content: center;
     flex-direction: column;
 	gap: 10px;
-	padding: 20px;
 }
 
 .welcome-tag,
@@ -82,6 +85,13 @@ body {
 .devquill-btn {
 	background-image: url("images/devquill-btn.jpg") ;
 	background-size: cover;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
 }
 
 /* Media Queries, Defaults and KeyFrames*/
