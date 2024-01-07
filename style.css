@@ -1,0 +1,142 @@
+body {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/main-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000000;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	animation: fadeIn 1.5s ease-in;
+}
+
+.sub-wrap {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+    width: 1280px;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+}
+
+.welcome-tag,
+.welcome-sub-tag {
+    color: #FFFFFF;
+    font-family: "Noto Sans KR", sans-serif;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.mid-container {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	gap: 30px;
+}
+
+.box-options-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.box-options {
+    background: #FFF;
+    color: #000;
+    height: 250px;
+    width: 250px;
+}
+
+.box-options:hover {
+  box-shadow: 0 0 10px rgb(255 0 0 / 84%);
+}
+
+.tavern-btn {
+	background-image: url("images/tavern-btn.jpg") ;
+	background-size: cover;
+}
+
+.showcase-btn {
+	background-image: url("images/showcase-btn.jpg") ;
+	background-size: cover;
+}
+
+.mailman-btn {
+	background-image: url("images/mailman-btn.jpg") ;
+	background-size: cover;
+}
+
+.devquill-btn {
+	background-image: url("images/devquill-btn.jpg") ;
+	background-size: cover;
+}
+
+/* Media Queries, Defaults and KeyFrames*/
+
+* {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* You can adjust the initial position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.color-red {
+	color: red;
+}
+
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+	.wrapper {
+	    overflow: scroll;
+		align-items: unset;
+	}
+
+	.sub-wrap {
+		height: 100%;
+	}
+
+  .welcome-tag {
+    font-size: 24px; 
+  }
+
+  .welcome-sub-tag {
+    font-size: 16px;
+  }
+
+  .box-options {
+        margin-bottom: 10px;
+		width: 320px;
+  }
+	
+	.box-options-container {
+		flex-direction: column;
+	}
+}
