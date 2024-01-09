@@ -7,6 +7,15 @@ body {
 	overflow: hidden;
 }
 
+body.tavern{
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/tavern.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000000;
+	background-size: cover;
+	overflow: hidden;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
